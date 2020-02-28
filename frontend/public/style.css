@@ -1,0 +1,12 @@
+.app {
+    margin-top: 2em;
+}
+
+.message {
+    text-align: center;
+}
+
+.fields, .check {
+    display: flex;
+    justify-content: center;
+}
