@@ -8,6 +8,7 @@
     "mon": "nodemon -r dotenv/config ./backend/app.js",
     "dev": "concurrently -n react,express -k \"cd frontend && npm run start\" \"npm run mon\"",
     "postinstall": "\"cd frontend && npm i\"",
+    "test": "jest",
     "start": "node -r dotenv/config ./backend/app.js"
   },
   "keywords": [
@@ -21,8 +22,10 @@
     "concurrently": "^5.1.0",
     "eslint": "^6.8.0",
     "file-loader": "^5.1.0",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.0",
